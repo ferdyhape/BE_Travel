@@ -18,7 +18,6 @@ class TravelResource extends JsonResource
             'name' => $this->name,
             'description' => $this->description ?? 'No description',
             'profile_photo_url' => $this->profile_photo_url ?? 'No profile photo',
-            // 'trips' => TravelTripResource::collection($this->trips),
         ];
     }
 }
