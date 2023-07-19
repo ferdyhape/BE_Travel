@@ -22,7 +22,7 @@ class UserSeeder extends Seeder
             User::create([
                 'name' => $faker->name,
                 'email' => $faker->email,
-                'phone_number' => $faker->phoneNumber,
+                'phone_number' => '0878658252' . $i,
                 'password' => bcrypt('password'),
                 'created_at' => now(),
                 'updated_at' => now(),
