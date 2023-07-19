@@ -16,11 +16,11 @@ class TravelTrip extends Model
         'departure_city',
         'destination_city',
         'price',
-        'travel_id',
+        'travel_company_id',
     ];
 
     public function travel()
     {
-        return $this->belongsTo(Travel::class);
+        return $this->belongsTo(Travel::class, 'travel_company_id', 'id');
     }
 }

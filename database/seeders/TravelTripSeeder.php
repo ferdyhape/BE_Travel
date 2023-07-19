@@ -30,7 +30,7 @@ class TravelTripSeeder extends Seeder
                     'departure_city' => $city[array_rand($city)],
                     'destination_city' => $city[array_rand($city)],
                     'price' => $price[rand(0, count($price) - 1)],
-                    'travel_id' => $travel->id,
+                    'travel_company_id' => $travel->id,
                 ]);
             }
         }

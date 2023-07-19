@@ -19,8 +19,8 @@ class TravelTripResource extends JsonResource
             'arrival_time' => $this->arrival_time,
             'departure_city' => $this->departure_city,
             'destination_city' => $this->destination_city,
-            'price' => $this->price,
-            'travel' => new TravelResource($this->travel),
+            'price' => 'Rp. ' . number_format($this->price, 0, ',', '.'),
+            'travel_company' => new TravelResource($this->travel),
         ];
     }
 }
