@@ -51,6 +51,7 @@ class AuthController extends Controller
                 'email' => 'required|email|unique:users,email',
                 'password' => 'required|string|min:6|confirmed',
                 'avatar' => 'nullable|image|mimes:jpg,png,jpeg|max:2048',
+                'phone_number' => 'required|string|min:10|max:13|unique:users,phone_number',
             ]);
 
             if ($request->hasFile('avatar')) {
@@ -60,6 +61,7 @@ class AuthController extends Controller
             $user = User::create([
                 'name' => $request->name,
                 'email' => $request->email,
+                'phone_number' => $request->phone_number,
                 'password' => Hash::make($request->password),
                 'avatar' => $avatarName ?? null,
             ]);

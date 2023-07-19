@@ -14,6 +14,7 @@ class UserController extends Controller
             $request->validate([
                 'name' => 'required|string|min:2',
                 'email' => 'required|email|unique:users,email,' . $request->user()->id,
+                'phone_number' => 'required|string|min:10|max:13|unique:users,phone_number,' . $request->user()->id,
                 'avatar' => 'nullable|image|mimes:jpg,png,jpeg|max:2048',
             ]);
 
@@ -21,6 +22,7 @@ class UserController extends Controller
             $user->update([
                 'name' => $request->name,
                 'email' => $request->email,
+                'phone_number' => $request->phone_number,
             ]);
 
             if ($request->hasFile('avatar')) {
