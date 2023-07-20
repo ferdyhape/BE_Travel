@@ -16,16 +16,16 @@ Name: ``` Ferdy Hahan Pradana ```
 
 Campus: ``` Politeknik Negeri Malang ```
 
-## 📌 Description
+## Description
 - This repository was created to fulfill the duties of a prospective intern as a Backend Engineer at PT Adma Digital Solusi.
 
-## ⚙️ Feature 
+## Feature 
 1.  Authentication (Login, Register, Logout)
 2.  Profile Action (Get self info & Update Profile)
 3.  Travel List (list of travel companies along with trips)
 4.  Booking (my booking, booking trip process, show detail booking, upload payment proof, cancel booking)
 
-## 📎 Feature Specific Information
+## Feature Specific Information
 1.  Authentication using a ```sanctum package``` from laravel
 2.  Upload image using laravel storage
 3.  Filter trips based on various criteria such as price range, origin city, destination city and departure time range
@@ -33,13 +33,13 @@ Campus: ``` Politeknik Negeri Malang ```
 5. The user can only upload payment proof if the booking status is ``` pending ```.
 6. Users can book trips with multiple passengers. even ordered not for himself, example: for his family or friends (on this feature using the ``` JSON ``` data type to store the passenger's name and phone number in the database).
 
-## 📃 Database Design (ERD)
+## Database Design (ERD)
 <p align="center">
   <img src="https://github.com/ferdyhape/BE_Travel/assets/75787853/b9a3a03a-59ec-4796-b32f-15e2196aeaea" width="90%" height="90%">
 </p>
 
 
-## 🔑 API Information
+## API Information
 Noted: because here I use the default localhost link from Laravel ``` (http://127.0.0.1:8000) ```, so you can **change the link to be your localhost link**
   <table style="width: 100%; margin:0 10px; text-align: left;">
     <tr>
@@ -143,7 +143,7 @@ Noted: because here I use the default localhost link from Laravel ``` (http://12
   </table>
 
 
-### 🔗 About Creator
+### About Creator
 [![portfolio](https://img.shields.io/badge/my_portfolio-000?style=for-the-badge&logo=ko-fi&logoColor=white)](https://www.ferdyhape.site/)
 [![linkedin](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/ferdy-hahan-pradana)
 [![instagram](https://img.shields.io/badge/instagram-833AB4?style=for-the-badge&logo=instagram&logoColor=white)](https://instagram.com/ferdyhape)
