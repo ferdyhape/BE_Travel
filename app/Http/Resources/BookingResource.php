@@ -21,7 +21,7 @@ class BookingResource extends JsonResource
             'passengers_detail' => PassengerResource::collection($this->passengers),
             'total_price' => $this->total_price,
             'status' => $this->status,
-            'payment_proof' => $this->payment_proof,
+            'payment_proof' => $this->payment_proof ?? 'No payment proof uploaded',
             'created_at' => $this->created_at,
             'updated_at' => $this->updated_at,
         ];

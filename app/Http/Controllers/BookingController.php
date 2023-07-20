@@ -53,6 +53,7 @@ class BookingController extends Controller
             'total_passengers' => $totalPassengers,
             'total_price' => $totalPrice,
             'payment_proof' => $paymentProofName ?? null,
+            'status' => 'pending',
         ]);
 
         for ($i = 0; $i < $totalPassengers; $i++) {
@@ -146,20 +147,20 @@ class BookingController extends Controller
             ], 403);
         }
 
-        if ($booking->status == 'cancelled') {
+        if ($booking->status == 'canceled') {
             return response()->json([
                 'status' => 'Error 400',
-                'message' => 'Booking already cancelled',
+                'message' => 'Booking already canceled',
             ], 400);
         }
 
         $booking->update([
-            'status' => 'cancelled',
+            'status' => 'canceled',
         ]);
 
         return response()->json([
             'status' => 'Success 200',
-            'message' => 'Booking cancelled successfully',
+            'message' => 'Booking canceled successfully',
             'booking' => new BookingResource($booking),
         ], 200);
     }
