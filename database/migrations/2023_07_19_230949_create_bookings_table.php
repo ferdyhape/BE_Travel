@@ -21,8 +21,8 @@ return new class extends Migration
                 ->onDelete('cascade');
             $table->foreignId('user_id')->constrained('users')->onDelete('cascade');
             $table->integer('total_passengers');
-            $table->integer('total_price');
-            $table->string('status', 50)->default('pending');
+            $table->decimal('total_price', 10, 2);
+            $table->enum('status', ['pending', 'success', 'canceled']);
             $table->string('payment_proof')->nullable();
             $table->timestamps();
         });

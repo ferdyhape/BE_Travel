@@ -19,7 +19,7 @@ return new class extends Migration
             $table->time('arrival_time');
             $table->string('departure_city', 50);
             $table->string('destination_city', 50);
-            $table->decimal('price', 8, 2);
+            $table->decimal('price', 10, 2);
             $table->foreignId('travel_company_id')->constrained('travels_company')->onDelete('cascade');
             $table->timestamps();
         });
