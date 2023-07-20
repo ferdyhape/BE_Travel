@@ -24,8 +24,9 @@ Campus: ``` Politeknik Negeri Malang ```
 
 ## 📃 Database Design (ERD)
 <p align="center">
-  <img src="https://github.com/ferdyhape/BE_Travel/assets/75787853/10200417-ecf8-492d-a6f4-e5f5f76cae4d" width="80%" height="80%">
+  <img src="https://github.com/ferdyhape/BE_Travel/assets/75787853/b9a3a03a-59ec-4796-b32f-15e2196aeaea" width="90%" height="90%">
 </p>
+
 
 ## 🔑 API Information
 Noted: because here I use the default localhost link from Laravel ``` (http://127.0.0.1:8000) ```, so you can **change the link to be your localhost link**
