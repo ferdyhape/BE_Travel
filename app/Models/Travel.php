@@ -13,6 +13,9 @@ class Travel extends Model
     protected $fillable = [
         'name',
         'description',
+        'email',
+        'address',
+        'phone_number',
         'profile_photo_path',
     ];
 

@@ -16,6 +16,9 @@ return new class extends Migration
         Schema::create('travels_company', function (Blueprint $table) {
             $table->id();
             $table->string('name', 100);
+            $table->string('email', 100);
+            $table->string('address', 255);
+            $table->string('phone_number', 13);
             $table->text('description');
             $table->string('profile_photo_path', 255)->nullable();
             $table->timestamps();

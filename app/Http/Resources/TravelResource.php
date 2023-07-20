@@ -16,6 +16,9 @@ class TravelResource extends JsonResource
     {
         return [
             'name' => $this->name,
+            'email' => $this->email,
+            'address' => $this->address,
+            'phone_number' => $this->phone_number,
             'description' => $this->description ?? 'No description',
             'profile_photo_url' => $this->profile_photo_url ?? 'No profile photo',
         ];
