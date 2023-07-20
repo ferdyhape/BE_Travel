@@ -36,7 +36,7 @@ Route::middleware(['auth:sanctum'])->group(function () {
     // Route for show list of travel company data
     Route::get('/travels-company', [TravelCompanyController::class, 'index']);
 
-    // Route for show list of booking data
+    // Route for booking feature
     Route::get('/my-booking', [BookingController::class, 'index']);
     Route::post('/booking', [BookingController::class, 'store']);
     Route::get('/booking/{id}', [BookingController::class, 'show']);
