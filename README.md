@@ -1,7 +1,6 @@
 # BE Travel
 
 ## Table of Contents
-=================
 
 1. [Creator](#creator)
 2. [Description](#description)
