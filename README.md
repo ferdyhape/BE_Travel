@@ -11,7 +11,7 @@
 6. [API Information](#api-information)
 7. [About Creator](#about-creator)
    
-## 👨 Creator
+## Creator
 Name: ``` Ferdy Hahan Pradana ```
 
 Campus: ``` Politeknik Negeri Malang ```
